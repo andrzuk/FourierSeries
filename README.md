@@ -28,6 +28,14 @@ ng add ngx-bootstrap
 npm install --save ngx-bootstrap-icons
 </code></pre> 
 
+## install components & services
+<pre><code>
+ng g c home
+ng g c panel
+ng g c chart
+ng g s actions
+</code></pre>
+
 ## develop App
 <pre><code>
 ng serve --open
