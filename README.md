@@ -33,6 +33,7 @@ npm install --save ngx-bootstrap-icons
 ng g c home
 ng g c panel
 ng g c chart
+ng g c transform
 ng g s actions
 </code></pre>
 

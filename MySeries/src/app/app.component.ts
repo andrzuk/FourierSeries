@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'My Fourier Series';
   seriesData: any = [];
+  transformData: any = [];
 }

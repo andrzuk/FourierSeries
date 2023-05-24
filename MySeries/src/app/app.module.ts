@@ -10,13 +10,15 @@ import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { HomeComponent } from './home/home.component';
 import { PanelComponent } from './panel/panel.component';
 import { ChartComponent } from './chart/chart.component';
+import { TransformComponent } from './transform/transform.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PanelComponent,
-    ChartComponent
+    ChartComponent,
+    TransformComponent
   ],
   imports: [
     BrowserModule,

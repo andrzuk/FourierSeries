@@ -37,6 +37,11 @@ export class PanelComponent {
       }
       this.appComponent.seriesData.push({ id: i, value: u });
     }
+    this.appComponent.transformData = [];
+    for (var k = 0; k < harmonic; k++) {
+      const u = 1 / (k + 1);
+      this.appComponent.transformData.push({ id: k, value: u });
+    }
     this.actionService.updateActionMessage('generate');
   }
 }
