@@ -25,6 +25,7 @@ cd MySeries
 npm install --save ng2-charts
 npm install --save chart.js
 ng add ngx-bootstrap
+npm install --save ngx-bootstrap-icons
 </code></pre> 
 
 ## develop App
