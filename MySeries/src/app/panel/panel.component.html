@@ -1,1 +1,23 @@
-<p>panel works!</p>
+<form [formGroup]="inputForm" (ngSubmit)="generateClick()">
+    <div class="my-2 row">
+        <div class="col-5">
+            <label for="points">Points:</label>
+        </div>
+        <div class="col-7">
+            <input type="number" class="form-control" id="points" min="10" max="10000" step="10" formControlName="points">
+        </div>
+    </div>
+    <div class="my-2 row">
+        <div class="col-5">
+            <label for="harmonic">Harmonic:</label>
+        </div>
+        <div class="col-7">
+            <input type="number" class="form-control" id="harmonic" min="1" max="1000" step="1" formControlName="harmonic">
+        </div>
+    </div>
+    <div class="my-4 row">
+        <div class="col-12">
+            <input type="submit" class="btn btn-primary form-control" value="Generate">
+        </div>
+    </div>
+</form>

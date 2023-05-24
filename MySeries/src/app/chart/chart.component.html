@@ -1,1 +1,11 @@
-<p>chart works!</p>
+<div class="flex">
+    <div class="flex-item">
+        <div style="display: block;">
+            <canvas baseChart width="600" height="400"
+                    [data]="seriesChartData"
+                    [options]="seriesChartOptions"
+                    [type]="seriesChartType">
+            </canvas>
+        </div>
+    </div>
+</div>
