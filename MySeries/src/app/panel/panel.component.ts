@@ -12,7 +12,6 @@ import { ActionsService } from '../actions.service';
 })
 export class PanelComponent {
 
-  PI = 3.14159;
   inputForm = new FormGroup({
     points: new FormControl('200'),
     harmonic: new FormControl('10'),
@@ -31,7 +30,7 @@ export class PanelComponent {
     const distance = parseInt(this.inputForm.controls.distance.value || '0'); 
     this.appComponent.seriesData = [];
     for (var i = 0; i <= points; i++) {
-      const x = distance * i * this.PI / points;
+      const x = distance * i * Math.PI / points;
       var u = 0;
       for (var j = 0; j < harmonic; j++) {
         u += 1 / (2 * j + 1) * Math.sin((2 * j + 1) * x);
