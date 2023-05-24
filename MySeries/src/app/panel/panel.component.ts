@@ -12,9 +12,11 @@ import { ActionsService } from '../actions.service';
 })
 export class PanelComponent {
 
+  PI = 3.14159;
   inputForm = new FormGroup({
     points: new FormControl('200'),
     harmonic: new FormControl('10'),
+    distance: new FormControl('2'),
   }); 
 
   constructor(public appComponent: AppComponent, private actionService: ActionsService) { }
@@ -24,6 +26,15 @@ export class PanelComponent {
   }
  
   generateClick() {
-    
+    const points = parseInt(this.inputForm.controls.points.value || '0'); 
+    const harmonic = parseInt(this.inputForm.controls.harmonic.value || '0'); 
+    const distance = parseInt(this.inputForm.controls.distance.value || '0'); 
+    this.appComponent.seriesData = [];
+    for (var i = 0; i <= points; i++) {
+      const x = 2 * i * this.PI / points;
+      const u = Math.sin(x);
+      this.appComponent.seriesData.push({ id: i, value: u });
+    }
+    this.actionService.updateActionMessage('generate');
   }
 }
