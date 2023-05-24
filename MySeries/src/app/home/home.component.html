@@ -1,12 +1,34 @@
 <ng-container>
 
     <div class="container">
-        <div class="row">
+        <div class="row mb-3">
             <div class="col col-10">
                 <app-chart></app-chart>
             </div>
             <div class="col col-2">
                 <app-panel></app-panel>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-12">
+                <p>
+                    A <b>square wave</b> can be used as an approximation of a <b>harmonic sine wave</b> through a process called <b>Fourier series expansion</b>. The Fourier series allows us to represent a periodic function, such as a square wave or a sine wave, as a sum of harmonically related sine and cosine functions.
+                </p>
+                <p>
+                    By using the Fourier series expansion, we can express a square wave as an infinite sum of sine and cosine functions with different frequencies and amplitudes. When more terms of the series are included, the square wave approximation gets closer to the shape of a sine wave.
+                </p>
+                <p>
+                    Using a sufficient number of harmonics in the Fourier series expansion can provide a reasonably good approximation of a sine wave with a square wave. This technique is commonly used in signal processing and audio synthesis to generate sine-like tones using square wave oscillators with appropriate harmonic content.
+                </p>
+                <p>
+                    <b>f(x) = Σ (1/n * sin(nx))</b>
+                </p>
+                <p>
+                    where: <b>n = 1, 3, 5, ...</b>
+                </p>
             </div>
         </div>
     </div>
